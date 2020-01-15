@@ -1,4 +1,6 @@
+<form #f="ngForm" >
 
-<app-student *ngFor = "let student of students" [student] ="student">
-
-</app-student>
+    <input  ngModel name="firstName" type="text" >
+    <input  name="lastName" type="text" >
+    <button  (click) ="log(f)" type="button">Submit</button>
+</form>

@@ -8,7 +8,9 @@ import Student from '../../models/Student';
 export class TestComponent implements OnInit {
    students:Student[]
   constructor() { }
-
+  log(f){
+    console.log(f.value)
+  }
   ngOnInit() {
     this.students = [
       {id:1,name:'Rakesh',isRegistered:true},

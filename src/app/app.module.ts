@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { StudentComponent } from './components/student/student.component';
 import { FormsModule } from '@angular/forms';
+import { CatchEventDirective } from './directive/catch-event.directive';
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    StudentComponent
+    StudentComponent,
+    CatchEventDirective
   ],
   imports: [
     BrowserModule,
