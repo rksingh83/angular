@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { StudentComponent } from './components/student/student.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
 import { CatchEventDirective } from './directive/catch-event.directive';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     StudentComponent,
-    CatchEventDirective
+    CatchEventDirective ,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule ,
-    FormsModule
+    FormsModule ,
+    ReactiveFormsModule ,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
